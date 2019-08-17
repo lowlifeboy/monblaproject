@@ -1,0 +1,299 @@
+/* -------------------- Fonts -------------------- */
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('fonts/MyriadPro/MyriadPro-Regular.eot');
+  src: url('fonts/MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/MyriadPro/MyriadPro-Regular.woff') format('woff'),
+    url('fonts/MyriadPro/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica 55 Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica 55 Roman'), url('fonts/Helvetica/HelveticaNeue-Roman.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('fonts/ProximaNova/ProximaNova-Regular.eot');
+  src: url('fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+    url('fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('fonts/ProximaNova/ProximaNova-Bold.eot');
+  src: url('fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+    url('fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url('fonts/ProximaNova/ProximaNova-Semibold.eot');
+  src: url('fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova/ProximaNova-Semibold.woff') format('woff'),
+    url('fonts/ProximaNova/ProximaNova-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tahoma Regular';
+  src: url('/fonts/Tahoma/Tahoma.eot');
+  src: url('/fonts/Tahoma/Tahoma.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Tahoma/Tahoma.woff') format('woff'),
+    url('/fonts/Tahoma/Tahoma.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* -------------------- Common -------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 936px;
+  margin: 0 15px;
+}
+
+header,
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -------------------- Header -------------------- */
+
+header {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+}
+
+header .container {
+  display: flex;
+}
+
+header .logo {
+  margin: 4px 97px 28px 55px;
+}
+
+.header__content {
+  margin-top: 34px;
+}
+
+.mainProjectInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.mainProjectInfo h1 {
+  color: #262626;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: -1.4px;
+  font-family: 'Myriad Pro Regular';
+  margin-right: 20px;
+}
+
+.mainProjectInfo span {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+  font-family: 'Helvetica 55 Roman';
+  color: #4090db;
+  border: 1px solid #4090db;
+  padding: 6px 10px 5px 12px;
+  border-radius: 4px;
+}
+
+.socialProjectInfo {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.socialProjectInfo p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: 'Proxima Nova Regular';
+  color: #3d4044;
+  margin-right: 29px;
+}
+
+.socialProjectInfo span {
+  font-family: 'Proxima Nova Regular';
+  font-weight: 700;
+}
+
+.datePicker {
+  display: flex;
+  align-items: center;
+}
+
+.datePicker p {
+  color: #262626;
+  font-family: 'Tahoma Regular';
+  font-size: 17px;
+  font-weight: 400;
+  margin-right: 14px;
+}
+
+.datePicker .datePickerField {
+  margin-right: 24px;
+  display: flex;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 1px 1px rgba(1, 1, 1, 0.15);
+  border-radius: 5px;
+}
+
+.datePicker input {
+  box-sizing: border-box;
+  width: 120px;
+  height: 32px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background-color: #ffffff;
+
+  color: #333333;
+  font-family: 'Helvetica 55 Roman';
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  padding: 9px 8px 7px 8px;
+}
+
+.datePicker button {
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #cccccc;
+  background-color: #ebebeb;
+}
+
+.datePicker button:nth-child(2) {
+  padding-top: 3px;
+}
+
+/* -------------------- Main -------------------- */
+
+main {
+  margin: 71px 0 75px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-bottom: 45px;
+}
+
+.post {
+  /* width: 292px; */
+  /* height: 292px; */
+  position: relative;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.post a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.post a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.postInfo {
+  position: absolute;
+  left: 0;
+  bottom: 14px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  color: #fff;
+  font-family: 'Proxima Nova Semibold';
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.likes,
+.comments {
+  display: flex;
+}
+
+.postInfo .likes img {
+  width: 21px;
+  height: 19px;
+  margin-right: 5px;
+}
+
+.postInfo .comments img {
+  width: 17px;
+  height: 17px;
+  margin-right: 6px;
+}
+
+.numberLikesAndComents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 22px;
+  width: 100%;
+}
+
+.uploadDate {
+  margin-top: 3px;
+}
+
+#loadMore  {
+  color: #000000;
+  font-family: 'Proxima Nova Regular';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  border: 1px solid #000000;
+  border-radius: 14px;
+  background-color: #fafafa;
+  padding: 2px 28px 1px;
+
+  cursor: pointer;
+}
+
+.post-hidden {
+  display: none;
+}
