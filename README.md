@@ -1,5 +1,5 @@
 # monblaproject
 
-![Desktop](/screenshots/scrnli_17-08-2019_20-09-39.png)
+![Desktop](https://scrn.li/b8jbVv0C6Qv8CT)
 
 [DEMO](https://lowlifeboy.github.io/monblaproject/)
