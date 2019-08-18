@@ -18,11 +18,16 @@
   <header>
     <div class="container">
       <a href="#" class="logo">
-        <img src="/images/logo.png" alt="Logo">
+        <img src="images/logo.png" alt="Logo">
       </a>
       <div class="header__content">
         <div class="mainProjectInfo">
-          <h1>monblanproject</h1>
+          <div class="project">
+            <a href="#" class="littlelogo">
+              <img src="images/logo.png" alt="Logo">
+            </a>
+            <h1>monblanproject</h1>
+          </div>
           <span>Start on 17-02-2016</span>
         </div>
         <div class="socialProjectInfo">
@@ -34,15 +39,27 @@
           <p>Date</p>
 
           <div class="datePickerField">
-            <input id="minDate" type="text" class="datepicker-here" placeholder="from" />
-            <button class="clearDate"><img src="/images/ic_close_black_24dp.png" alt="Clear date"></button>
-            <button><img src="/images/ic_date_range.png" alt="Сhoose date"></button>
+            <input id="minDate" type="text" placeholder="from" />
+            <button class="clearDate">
+              <img src="images/ic_close_black_24dp.png" alt="Clear date">
+            </button>
+            <label for="minDatePicker" class="maxDateField">
+              <input id="minDatePicker" class="showDatepicker datepicker-here" data-position='bottom right'
+                type="button" />
+              <img class="showDatepickerImg" src="images/ic_date_range.png" alt="Сhoose date">
+            </label>
           </div>
 
           <div class="datePickerField">
-            <input id="maxDate" type="text" class="datepicker-here" placeholder="to" />
-            <button class="clearDate"><img src="/images/ic_close_black_24dp.png" alt="Clear date"></button>
-            <button><img src="/images/ic_date_range.png" alt="Сhoose date"></button>
+            <input id="maxDate" type="text" placeholder="to" />
+            <button class="clearDate">
+              <img src="images/ic_close_black_24dp.png" alt="Clear date">
+            </button>
+            <label for="maxDatePicker" class="maxDateField">
+              <input id="maxDatePicker" class="showDatepicker datepicker-here" data-position='bottom right'
+                type="button" />
+              <img class="showDatepickerImg" src="images/ic_date_range.png" alt="Сhoose date">
+            </label>
           </div>
         </div>
       </div>
@@ -50,556 +67,557 @@
   </header>
 
   <main>
-    <div class="posts">
+    <div class="container">
+      <div class="posts">
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/1.png" alt="Post number 1">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
+              </div>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
+              </div>
+              <p>Image upload: <span>11-04-2016</span></p>
+            </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/1.png" alt="Post number 1">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/2.png" alt="Post number 2">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>12,800</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>3,100</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p class="uploadDate">Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/2.png" alt="Post number 2">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>12,800</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/3.png" alt="Post number 3">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>3,100</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p class="uploadDate">Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/3.png" alt="Post number 3">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/4.png" alt="Post number 4">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/4.png" alt="Post number 4">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/5.png" alt="Post number 5">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/5.png" alt="Post number 5">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/6.png" alt="Post number 6">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/6.png" alt="Post number 6">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/7.png" alt="Post number 7">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/7.png" alt="Post number 7">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/8.png" alt="Post number 8">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/8.png" alt="Post number 8">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/9.png" alt="Post number 9">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/9.png" alt="Post number 9">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/1.png" alt="Post number 1">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/1.png" alt="Post number 1">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/2.png" alt="Post number 2">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>12,800</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>3,100</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p class="uploadDate">Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/2.png" alt="Post number 2">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>12,800</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/3.png" alt="Post number 3">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>3,100</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p class="uploadDate">Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/3.png" alt="Post number 3">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/4.png" alt="Post number 4">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/4.png" alt="Post number 4">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/5.png" alt="Post number 5">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/5.png" alt="Post number 5">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/6.png" alt="Post number 6">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/6.png" alt="Post number 6">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/7.png" alt="Post number 7">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/7.png" alt="Post number 7">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
+        <div class="post post-hidden">
+          <a href="#">
+            <img src="images/8.png" alt="Post number 8">
+            <div class="bg"></div>
+            <div class="postInfo">
+              <div class="numberLikesAndComents">
+                <p class="day">Today</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>128</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>31</span>
+                </div>
               </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
+              <div class="numberLikesAndComents">
+                <p class="day">9-08-2016</p>
+                <div class="likes">
+                  <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
+                  <span>67</span>
+                </div>
+                <div class="comments">
+                  <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
+                  <span>22</span>
+                </div>
               </div>
+              <p>Image upload: <span>11-04-2016</span></p>
             </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
-      </div>
-
-      <div class="post post-hidden">
-        <a href="#">
-          <img src="images/8.png" alt="Post number 8">
-          <div class="bg"></div>
-          <div class="postInfo">
-            <div class="numberLikesAndComents">
-              <p class="day">Today</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>128</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>31</span>
-              </div>
-            </div>
-            <div class="numberLikesAndComents">
-              <p class="day">9-08-2016</p>
-              <div class="likes">
-                <img src="images/ic_favorite_black_24dp_2x.png" alt="Likes number">
-                <span>67</span>
-              </div>
-              <div class="comments">
-                <img src="images/ic_mode_comment_black_24dp_2x.png" alt="Comments number">
-                <span>22</span>
-              </div>
-            </div>
-            <p>Image upload: <span>11-04-2016</span></p>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </div>
     <p id="loadMore">load more</p>
   </main>
 
-  
+
   <script src="./sctipts.js"></script>
 </body>
 

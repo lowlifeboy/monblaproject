@@ -23,14 +23,14 @@ $(function() {
   });
 });
 
-$('#maxDate').on('click', function(e) {
-  e.preventDefault();
+// $('#maxDate').on('click', function(e) {
+//   e.preventDefault();
 
-  let minDate = $('#minDate')
-    .val()
-    .split('.');
+//   let minDate = $('#minDate')
+//     .val()
+//     .split('.');
 
-  $('#maxDate').datepicker({
-    minDate: new Date(+minDate[2], +minDate[1], +minDate[0]),
-  });
-});
+//   $('#maxDate').datepicker({
+//     minDate: new Date(+minDate[2], +minDate[1], +minDate[0]),
+//   });
+// });

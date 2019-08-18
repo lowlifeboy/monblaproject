@@ -66,11 +66,12 @@
 
 body {
   background-color: #fafafa;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 936px;
-  margin: 0 15px;
+  padding: 0 15px;
 }
 
 header,
@@ -89,20 +90,30 @@ header {
 
 header .container {
   display: flex;
+  width: 936px;
 }
 
 header .logo {
-  margin: 4px 97px 28px 55px;
+  margin: 4px 95px 24px 55px;
+}
+
+.littlelogo {
+  display: none;
+}
+
+.project {
+  display: flex;
+  align-items: center;
 }
 
 .header__content {
-  margin-top: 34px;
+  margin-top: 37px;
 }
 
 .mainProjectInfo {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .mainProjectInfo h1 {
@@ -111,7 +122,7 @@ header .logo {
   font-weight: 400;
   letter-spacing: -1.4px;
   font-family: 'Myriad Pro Regular';
-  margin-right: 20px;
+  margin-right: 22px;
 }
 
 .mainProjectInfo span {
@@ -121,13 +132,14 @@ header .logo {
   font-family: 'Helvetica 55 Roman';
   color: #4090db;
   border: 1px solid #4090db;
-  padding: 6px 10px 5px 12px;
+  padding: 6px 10px 6px 10px;
   border-radius: 4px;
+  margin-top: 2px;
 }
 
 .socialProjectInfo {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .socialProjectInfo p {
@@ -137,6 +149,10 @@ header .logo {
   font-family: 'Proxima Nova Regular';
   color: #3d4044;
   margin-right: 29px;
+}
+
+.socialProjectInfo p:last-child {
+  margin-right: 0;
 }
 
 .socialProjectInfo span {
@@ -159,16 +175,21 @@ header .logo {
 
 .datePicker .datePickerField {
   margin-right: 24px;
+  margin-top: 2px;
   display: flex;
   border: 1px solid #cccccc;
   box-shadow: inset 0 1px 1px rgba(1, 1, 1, 0.15);
   border-radius: 5px;
 }
 
+.datePicker .datePickerField:last-child {
+  margin-right: 0;
+}
+
 .datePicker input {
   box-sizing: border-box;
   width: 120px;
-  height: 32px;
+  height: 30px;
   border: none;
   border-radius: 5px 0 0 5px;
   background-color: #ffffff;
@@ -185,12 +206,37 @@ header .logo {
 .datePicker button {
   box-sizing: border-box;
   width: 32px;
-  height: 32px;
+  height: 30px;
   border: 1px solid #cccccc;
+  border-bottom: none;
+  border-top: none;
   background-color: #ebebeb;
 }
 
-.datePicker button:nth-child(2) {
+.datePicker #minDatePicker,
+.datePicker #maxDatePicker {
+  padding-top: 2px;
+  width: 32px;
+  background: #ebebeb;
+  border-radius: 0 5px 5px 0;
+}
+
+.maxDateField {
+  position: relative;
+}
+
+.showDatepickerImg {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+}
+
+.datepicker,
+.datepicker-inline {
+  z-index: 999;
+}
+
+.clearDate {
   padding-top: 3px;
 }
 
@@ -278,7 +324,7 @@ main {
   margin-top: 3px;
 }
 
-#loadMore  {
+#loadMore {
   color: #000000;
   font-family: 'Proxima Nova Regular';
   font-size: 12px;
@@ -296,4 +342,82 @@ main {
 
 .post-hidden {
   display: none;
+}
+
+@media (max-width: 966px) {
+  header .container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header__content {
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  header .logo {
+    display: none;
+  }
+
+  .littlelogo {
+    display: block;
+  }
+
+  .littlelogo img {
+    width: 55px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .posts {
+    grid-template-columns: 1fr 1fr;
+  }  
+}
+
+@media (max-width: 650px) {
+  .mainProjectInfo h1 {
+    margin-right: 0;
+  }
+
+  .mainProjectInfo {
+    flex-direction: column;
+  }
+
+  .mainProjectInfo span {
+    margin-bottom: 10px;
+  }
+
+  .socialProjectInfo,
+  .datePicker {
+    justify-content: center;
+  }
+
+  .datePicker {
+    flex-direction: column;
+  }
+
+  .datePicker p {
+    margin-bottom: 10px;
+  }
+  
+  .datePicker .datePickerField {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .datePicker .datePickerField:last-child {
+    margin-bottom: 0;
+  }
+
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .socialProjectInfo p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
