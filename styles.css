@@ -345,9 +345,13 @@ main {
 }
 
 @media (max-width: 966px) {
+  .container {
+    box-sizing: border-box;
+  }
+
   header .container {
     width: 100%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     justify-content: center;
   }
 
