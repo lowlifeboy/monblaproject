@@ -347,6 +347,7 @@ main {
 @media (max-width: 966px) {
   header .container {
     width: 100%;
+    box-sizing: border-box;
     justify-content: center;
   }
 
